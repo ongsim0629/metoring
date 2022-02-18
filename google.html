@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .google-wrapper{
+            width: 100vw;
+            height: 80vh;
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        #store{
+            padding-left: 15px;
+        }
+        #nav-left{
+            width: 50%;
+            padding-left: 2%;
+        }
+        #nav-right-wrapper{
+            width: 30%;
+        }
+        #nav-right{
+            width: 100%;
+            float: right;
+            display: flex;
+            padding-left: 80px;
+            justify-content: space-around;
+        }
+        #app{
+            max-width: 25px;
+            max-height: 25px;
+        }
+        #lgn-bt{
+            background-color: #1a73e8;
+            color: white;
+            border-radius: 8px;
+            border: #1a73e8;
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+        .content-wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content{
+            width: 1040px;
+            height: 550px;
+        }
+        #logo{
+            width: 350px;
+            position: relative;
+            left: 33%;
+        }
+        .search{
+            display: block;
+            margin: 0 auto;
+            width: 700px;
+            height: 50px;
+            border: 1px solid #EAEAEA;
+            border-radius: 30px;
+        }
+        .buttons-wrapper{
+            width: 40%;
+            position: relative;
+            left: 30%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons{
+            background-color: #f9f9fa;
+            border: #f9f9fa;
+            font-size: 20px;
+            padding: 10px 30px;
+            border-radius: 5px;
+        }
+
+        #search-icon{
+            position: relative;
+            top: -45px;
+            left: 180px;
+            max-width: 20px;
+        }
+        #keyboard{
+            position: relative;
+            top: -40px;
+            right: -750px;
+            max-height: 30px;
+        }
+        #mic{
+            position: relative;
+            top: -40px;
+            right: -770px;
+            max-height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="google-wrapper">
+  <div class="header">
+      <div id="nav-left">
+          <a href="https://about.google/?fg=1&utm_source=google-KR&utm_medium=referral&utm_campaign=hp-header">Google 정보 </a>
+          <a id="store" href="https://store.google.com/KR?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=ko-KR">스토어</a>
+      </div>
+      <div id="nav-right-wrapper">
+          <div id="nav-right">
+              <a href="https://www.google.com/intl/ko/gmail/about/">Gmail</a>
+              <a href="https://www.google.co.kr/imghp?hl=ko&tab=wi&ei=s4dDWb7SFsmw0gTlr6eQBA&ved=0EKouCBUoAQ">이미지</a>
+              <img id="app" src="https://cdn-icons-png.flaticon.com/512/162/162740.png" alt="Google 앱">
+              <button id="lgn-bt" type="button" onclick="location.href='https://accounts.google.com/ServiceLogin/signinchooser?hl=ko&passive=true&continue=https%3A%2F%2Fwww.google.com%2F%3F%26bih%3D568%26biw%3D1242%26hl%3Dko&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin'">로그인</button>
+          </div>
+      </div>
+
+  </div>
+  <div class="content-wrapper">
+      <div class="content">
+          <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="구글">
+          <br>
+          <br>
+          <input class="search" type="text">
+          <img id="search-icon" src="data:image/png;base64,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" alt="">
+          <img id="keyboard" src="https://cdn-icons-png.flaticon.com/512/73/73159.png" alt="키보드 아이콘">
+          <img id="mic" src="https://seeklogo.com/images/G/google-mic-logo-EF440C9A6F-seeklogo.com.png" alt="마이크 아이콘">
+          <br>
+          <br>
+          <div class="buttons-wrapper">
+              <button class="buttons">Google 검색</button>
+              <button class="buttons">I'm Feeling Lucky</button>
+          </div>
+      </div>
+  </div>
+
+</div>
+</body>
+</html>

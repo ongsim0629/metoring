@@ -1,0 +1,48 @@
+body {
+    background-image: linear-gradient(rgba(0, 19, 117, 0.45), rgba(2, 101, 182, 0.45)), url("../assets/img/water1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bolder;
+}
+
+.intro-button{
+    color: royalblue;
+}
+
+
+
+#mainNav{
+    background-color: #7faac6;
+}
+#mainNav .navbar-brand {
+    color: white;
+}
+
+.cta{
+    background-color: #7faac6;
+}
+
+.cta-inner{
+    background-color: #fff7db;
+}
+
+.bg-faded{
+    background-color: #fff7db;
+}
+.section-heading .section-heading-lower {
+    display: block;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.footer{
+    background-color: #7faac6;
+}
+.btn-primary {
+    color: #000;
+    background-color: #5383a1;
+    border-color: #3d708f;
+}
